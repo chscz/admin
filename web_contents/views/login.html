@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form id="form_login">
+         <div id="input">
+            <div>
+               <span>ID</span>
+               <input
+                  type="text"
+                  id="user_id"
+                  placeholder="id"
+                  required
+                  onkeypress="keyPress(event)"
+               />
+            </div>
+            <div>
+               <span>PW</span>
+               <input
+                  type="password"
+                  id="user_pw"
+                  placeholder="password"
+                  required
+                  onkeypress="keyPress(event)"
+               />
+            </div>
+         </div>
+         <div id="box_login">
+            <div id="btn_login">로그인</div>
+         </div>
+      </form>
+      <h1>{{ .title }}</h1>
+
+      <style>
+         div {
+            border: 1px solid black;
+            flex: content;
+         }
+         form {
+            display: flex;
+            width: 400px;
+            height: 200px;
+         }
+         #btn_login {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+         }
+         #btn_login:hover {
+            border: 2px solid tomato;
+            width: 60px;
+            height: 60px;
+         }
+      </style>
+      <!-- <script type="text/javascript" src="../assets/js/login.js"></script> -->
+      <script type="text/javascript" src="/assets/js/login.js"></script>
+   </body>
+</html>

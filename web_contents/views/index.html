@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
    <head>
-      <meta charset="UTF-8" />
+      <!-- <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
       <title>GIG 관리자</title>
    </head>
-   <body></body>
+   <body>
+      <header>
+         <ul>
+            <div class="btn_box">
+               <li class="btn menu">
+                  <a href="#" target="_self"><span>유저목록</span></a>
+               </li>
+            </div>
+            <div class="btn_box">
+               <li class="btn menu">
+                  <a href="#" target="_self"><span>구독관리</span></a>
+               </li>
+            </div>
+            <div class="btn_box">
+               <li class="btn menu">
+                  <a href="#" target="_self"><span>비상대출</span></a>
+               </li>
+            </div>
+            <div class="btn_box">
+               <li class="btn menu">
+                  <a href="#" target="_self"><span>계정관리</span></a>
+               </li>
+            </div>
+            <div class="btn_box">
+               <li class="btn logout">
+                  <a href="#" target="_self"><span>로그아웃</span></a>
+               </li>
+            </div>
+         </ul>
+      </header>
+      <div id="box"></div>
+      <div id="btn_get_user"></div>
+      {{ .templete }}
+      <script type="text/javascript" src="/assets/js/users.js"></script>
+      <style>
+         #box {
+            height: 600px;
+            background-color: greenyellow;
+         }
+         a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+         }
+         .btn_box {
+            width: 100px;
+            height: 70;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px, 20px;
+         }
+         ul {
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         li {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .btn {
+            width: 80px;
+            height: 50px;
+            background-color: tomato;
+            border: 1px, solid tomato;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+         }
+         .btn:hover {
+            width: 90px;
+            height: 60px;
+            border-color: blue;
+         }
+         .btn:hover span {
+            font-size: 17px;
+         }
+
+         #btn_get_user {
+            height: 50px;
+            width: 50px;
+            background-color: wheat;
+         }
+      </style>
+   </body>
 </html>
